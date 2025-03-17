@@ -1,0 +1,453 @@
+body
+{
+ margin: 0;
+  padding: 0;
+
+	font-family: sans-serif;
+}
+/*Global CSS starts*/
+h1{
+    font-size: 46px;
+    color: #ffffff;
+
+}
+h2{
+    font-size: 26px;
+    padding: 15px;
+    color: #000000;
+
+}
+h4{
+    color: #000000;
+    font-size: 15px;
+
+}
+h3{
+    color: #000000;
+    font-size: 25px;
+}
+p{
+
+}
+/*Global CSS ends*/
+/*Landing Page starts*/
+/*Hero Section starts*/
+.hero-title{
+    text-align: left;
+    padding-bottom: 46px;
+    padding-top: 177px;
+    margin-left: -100px;
+}
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 80px; /* Space for fixed navbar */
+}
+
+.bg-transparent-black {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(5px);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255,0.8);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+/*Hero Section ends*/
+
+/*Job Categories starts*/
+.job-title{
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 45px;
+}
+.job-title h2{
+    color: #28395a;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 95px;
+
+
+}
+.job-title span{
+    border-bottom: #fb246a 5px solid;
+    display: block;
+    margin: 60px auto;
+    width: 20%;
+}
+.job-image{
+    text-align: center;
+}
+.job-image img{
+    height: 150px;
+    border: 1px solid #dafcef;
+    padding: 20px 20px;
+}
+.job-image h1{
+    font-weight: 600;
+    font-size: 20px;
+    color: #001f38;
+    line-height: 5;
+}
+
+.btn-one{
+    border: 2px solid #8b92dd;
+    color: #8b92dd;
+    background: none;
+    padding: 20px 20px 20px 20px;
+    margin: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;   
+    margin-bottom: 50px;
+}
+.btn-one:hover {
+    background-color: rgba(75, 108, 179, 0.3); /* Darker blue with 30% opacity */
+    border-color: #4b6cb3; /* Matching darker blue */
+    color: #000000; /* Black text */
+}
+/*Job Categories ends*/
+
+
+/*Upload CV section starts*/
+.upload-cv {
+    position: relative; /* Required for pseudo-element positioning */
+    background-image: url(../img/cv.jpg);
+    background-size: cover;
+}
+
+/* Light blue overlay */
+.upload-cv::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(31, 43, 123, 0.8); /* Light blue with 30% opacity */
+    z-index: 1;
+}
+
+/* Ensure your content stays above the overlay */
+.upload-cv > * {
+    position: relative;
+    z-index: 2;
+}
+.upload-title{
+    text-align: center;
+    padding: 40px 20px 40px 20px;
+
+}
+.upload-title h3{
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 15px;
+
+}
+.upload-title h1{
+    color: #fff;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.3;
+    margin-bottom: 51px;
+
+}
+.btn-two{
+    border: 1px solid #8b92dd;
+    color: #8b92dd;
+    background: none;
+    padding: 19px 69px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.4s linear; /* Fixed transition property */
+    overflow: hidden;
+    margin: 0;
+
+}
+.btn-two:hover{
+    background-color: rgba(173, 216, 230, 0.3);
+    border-color: #add8e6; /* Light blue border */
+    color: #ffffff; /* White text for contrast */
+}
+
+/*Recent Job section starts*/
+
+.recent-jobs{
+    background-color: #f8f9fa;
+}
+.text-center span{
+    color: #fb246a;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    display: block;
+
+}
+.text-center h2{
+    color: #28395a;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: -50px;
+
+}
+/* Jobs Carousel Section */
+#jobsCarousel {
+    
+    padding: 4rem 0;
+}
+
+/* Job Card Styling */
+.job-card {
+    background: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+    border: 1px solid rgba(139, 146, 221, 0.15); /* Subtle purple border */
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(139, 146, 221, 0.08); /* Theme-colored shadow */
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.job-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(139, 146, 221, 0.03) 0%, rgba(255,255,255,0) 100%);
+    z-index: 1;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(139, 146, 221, 0.12);
+    background: rgba(255, 255, 255, 1);
+}
+
+.card-body {
+    position: relative;
+    z-index: 2;
+    background: transparent !important;
+}
+
+/* Optional: Add a subtle accent line */
+.job-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: #8b92dd;
+    opacity: 0.15;
+    transition: opacity 0.3s ease;
+}
+
+.job-card:hover::after {
+    opacity: 0.3;
+}
+
+/* Typography & Colors */
+.card-title {
+    color: #2d2d2d;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.badge.bg-primary {
+    background-color: #8b92dd !important;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+.job-meta {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.text-success {
+    color: #4bb543 !important; /* Green for salary */
+}
+
+.card-text {
+    color: #4a4a4a;
+    line-height: 1.6;
+    margin: 1.5rem 0;
+}
+
+/* Apply Button */
+.btn-primary {
+    background-color: #8b92dd;
+    border-color: #8b92dd;
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #787fcc;
+    border-color: #787fcc;
+}
+
+/* Post Time */
+.text-muted {
+    color: #868e96 !important;
+    font-size: 0.85rem;
+}
+
+/* Carousel Controls */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    color: #8b92dd;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #8b92dd;
+    border-radius: 50%;
+    padding: 1.5rem;
+    background-size: 60%;
+}
+
+
+/*Recent Job section ends*/
+
+/*approach section starts*/
+.approach{
+	background-color: rgba(31, 43, 123, 0.8);
+    padding-bottom: 45px;
+    padding-top: 45px;
+
+}
+.app{
+	margin-bottom: 30px;
+}
+.approach-content{
+	background: #ffffff;
+    padding: 0px;
+    margin: 0px;
+
+}
+.app-img{
+	    position: relative;
+        padding: 0px;
+
+}
+.app-img img{
+    height: 110px;
+    padding-left: 35px;
+}
+.step{
+	background: #fb246a;
+    position: absolute;
+    width: 36%;
+    text-align: center;
+    border: 2px solid #fff;
+    top: 22px;
+    right: -33px;
+
+}
+
+.app-content{
+	padding: 28px 77px 0px;
+
+}
+.about-title{
+    text-align: center;
+
+}
+.about-title h3{
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    font-size: 30px;
+    
+
+}
+.about-title h4{
+    color: #fb246a;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    font-size: 10px;
+    
+
+}
+
+
+/*approach section ends*/
+
+/*post job section starts*/
+.post-job{
+    background-color: #e8e9eB;
+    padding: 50px;
+}
+.post-title{
+    text-align: center;
+
+}
+.post-title h1{
+    color: #fb246a;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    display: block;
+
+}
+.post-title span{
+
+}
+.post-title h4{
+    color: #4b4b4b;
+    line-height: 1.5;
+    padding: 0px 20px 25px;
+
+}
+/*post job section ends*/
+
+/*footer hero section starts*/
+footer{
+    background: #2b2b2b;
+    padding: 50px 0px;
+}
+.footer-one{
+
+}
+.footer-two{
+    text-align: end;
+
+}
+/*footer hero section  ends*/
+
+
